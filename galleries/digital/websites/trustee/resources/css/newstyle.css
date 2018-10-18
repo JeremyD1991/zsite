@@ -1,0 +1,500 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*Body and General Styles*/
+html,
+body {
+	font-family: "Avenir-Book", "Gotham-Book", Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	font-color: #4c4c4c;
+	background-color: #ececec;
+	overflow-x: hidden;
+	min-height: 100vh;
+}
+
+header,
+footer {
+	background-color: #3f4c56;
+	color: #ffffff;
+	padding: 20px 0;
+	width: 100vw;
+}
+
+.content {
+	min-height: calc(100vh - 234px);
+}
+
+.container {
+	display: flex;
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.fullw {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-height: 50vh;
+	background-color: #000000;
+	overflow: hidden;
+}
+
+.fullw img {
+	width: 100%;
+}
+
+.hidden {
+	display: none;
+}
+
+/*------------------------Custom Font Families------------------------*/
+
+@font-face {
+    font-family: Avenir-Book;
+    src: url('../fonts/Avenir-Book.ttf');
+}
+
+@font-face {
+    font-family: Avenir-Medium;
+    src: url('../fonts/Avenir-Medium.ttf');
+}
+
+
+@font-face {
+    font-family: Gotham-Book;
+    src: url('../fonts/Gotham-Book.otf');
+}
+
+@font-face {
+    font-family: Gotham-Medium;
+    src: url('../fonts/Gotham-Medium.otf');
+}
+
+/*Font Styles*/
+
+h1,
+h2,
+h3,
+h6 {
+	font-family: "Gotham-Medium", "Gotham-Book", Helvetica, Arial, sans-serif;
+	text-transform: uppercase;
+	color: #4c5b66;
+	letter-spacing: 0.2px;
+	margin-bottom: 15px;
+}
+
+h1 {
+	font-size: 2rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+}
+
+h6 {
+	color: #4c4c4c;
+}
+
+b {
+	font-weight: 700;
+}
+
+p {
+	line-height: 1.4;
+}
+
+a {
+	color: #454c56;
+}
+
+/*Header Image*/
+.headerlogo {
+	max-width: 150px;
+}
+
+/*Menu Styles*/
+.mobiletoggle {
+	display: none;
+}
+
+nav {
+	background-color: #4c5b66;
+	height: 40px;
+	display: flex;
+	align-items: center;
+}
+
+nav a,
+nav a:hover,
+nav li {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+nav ul {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+.top {
+	height: 40px;
+	padding-top: 24px;
+	width: calc(100% / 5);
+}
+
+.dropdown {
+	position: absolute;
+	flex-direction: column;
+	margin-top: 12px;
+	background-color: #ececec;
+	width: auto;
+	box-shadow: 0px 2px 10px rgba(0,0,0,0.1);
+}
+
+.dropdown a {
+	display: block;
+	padding: 15px 25px;
+	color: #4c4c4c;
+}
+
+.dropdown a:hover {
+	background-color: #4c5b66;
+}
+
+.external {
+	background-color: #cccccc;
+}
+
+/*Main Content Styles*/
+.main {
+	padding: 50px 0;
+	justify-content: space-between;
+}
+
+.divider {
+	width: 1px;
+	background-color: #cccccc;
+}
+
+.left {
+	width: 60%;
+	display: flex;
+}
+
+.right {
+	width: 35%;
+	align-items: center;
+	display: flex;
+}
+
+.column {
+	flex-flow: column wrap;
+	align-items: flex-start;
+	display: flex;
+}
+
+.date {
+	margin-bottom: 5px;
+}
+
+/*Document Styles*/
+.full {
+	padding: 30px 0;
+	width: 100%;
+}
+.doc {
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	color: #4c4c4c;
+	margin: 10px 0;
+}
+
+.doc:hover {
+	color: #76b758;
+}
+
+.doc img {
+	max-height: 4rem;
+	margin-right: 25px;
+}
+
+iframe {
+	width: 100vw;
+	max-width: 1200px;
+	min-height: 700px;
+}
+
+/*Trustee Styles*/
+.trustees {
+	flex-wrap: wrap;
+}
+
+.trustees h1 {
+	width: 100%;
+}
+
+.trustees h2 {
+  	border-bottom: 1px solid #cccccc;
+ 	padding-bottom: 10px;
+	width: 90%;
+}
+
+.trustees .right {
+	width: 50%;
+	margin: 20px 0;
+}
+
+.trustees a {
+	text-decoration: none;
+	font-size: 1.1rem;
+	line-height: 1.4;
+	color: #3f4c56;
+}
+
+.trustees a:hover {
+	color: #76b758;
+}
+
+.split {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+
+.member {
+	background-color: #ffffff;
+	width: 20%;
+}
+
+.member img {
+	width: 100%;
+}
+
+.member p {
+	padding: 20px 10px;
+	border-top: 1px solid #cccccc;
+	line-height: 1.2;
+	font-size: 15px;
+}
+
+.member p:first-of-type {
+	border: 0;
+}
+
+.profile {
+	width: 75%;
+}
+
+/*Footer Styles*/
+footer span {
+	display: block;
+}
+
+footer .container {
+	justify-content: space-between;
+	align-items: center;
+}
+
+footer .left {
+	flex-direction: column;
+}
+
+.venue {
+	font-family: "Gotham-Medium", "Gotham-Book", Helvetica, Arial, sans-serif;
+	text-transform: uppercase;
+}
+
+footer a,
+footer a:hover {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+@media only screen and (max-width: 1200px) {
+	/*Body and General Styles*/
+	.container {
+		max-width: 900px;
+	}
+
+	/*Profile Styles*/
+	.member {
+		width: 30%;
+	}
+
+	.profile {
+		width: 65%;
+	}
+
+	/*Document Styles*/
+	iframe {
+		max-width: 900px;
+		min-height: 500px;
+	}
+}
+
+@media only screen and (max-width: 900px) {
+	/*Body and General Styles*/
+	.container {
+		max-width: 700px;
+	}
+
+	/*Profile Styles*/
+	.member {
+		width: 40%;
+	}
+
+	.profile {
+		width: 55%;
+	}
+
+	/*Document Styles*/
+	iframe {
+		max-width: 700px;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	/*Menu Style*/
+	.mobiletoggle {
+		display: block;
+		padding: 20px;
+		color: #ffffff;
+		background-color: #4c5b66;
+		text-align: center;
+	}
+	
+	nav {
+		height: 0;
+		overflow: hidden;
+		transition-duration: 0.3s;
+	}
+	
+	.active {
+		height: auto;
+		transition-duration: 0.3s;
+	}
+	
+	nav .container {
+		max-width: 100vw;
+	}
+	
+	nav ul {
+		display: inline-flex;
+		flex-direction: column;
+	}
+	
+	.top {
+		width: 100%;
+		text-align: center;
+		justify-content: center;
+		display: flex;
+		flex-wrap: wrap;
+		min-height: 40px;
+		height: auto;
+	}
+	
+	.dropdown {
+		display: flex!important;
+		background-color: #6c8393;
+		width: 100%;
+		position: relative;
+		margin-top: 20px;
+	}
+	
+	.dropdown a {
+		color: #f5f5f5;
+	}
+	
+	/*Body and General Styles*/
+	header .container {
+		justify-content: center;
+	}
+	
+	.container {
+		max-width: 300px;
+		flex-wrap: wrap;
+	}
+
+	.left {
+		margin-bottom: 50px;
+	}
+
+	.left,
+	.right {
+		width: 100%;
+	}
+	
+	.trustees .right {
+		width: 100%;
+	}
+
+	/*Profile Styles*/
+	.split {
+		flex-wrap: wrap;
+	}
+	
+	.member {
+		width: 100%;
+		margin-bottom: 50px;
+	}
+
+	.profile {
+		width: 100%;
+	}
+
+	/*Document Styles*/
+	iframe {
+		max-width: 300px;
+		min-height: 300px;
+	}
+}

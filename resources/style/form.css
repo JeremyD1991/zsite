@@ -1,0 +1,101 @@
+.wufoo input.text,.wufoo input,.wufoo textarea.textarea,.wufoo input.file {
+ font-family:avenir,arial,helvetica,sans-serif;
+ font-size:1rem
+}
+.contact {
+ min-height:450px
+}
+.wufoo #header {
+ display:none
+}
+#public {
+ background:0 0
+}
+.buttons a {
+ opacity:0
+}
+.wufoo ul {
+ display:flex;
+ flex-flow:row wrap;
+ justify-content:space-between
+}
+.noI form li {
+ width:100%!important;
+ padding:0;
+ margin:0 0 25px
+}
+.noI form li.buttons {
+ width:100%!important;
+ display:flex;
+ justify-content:center
+}
+.wufoo label {
+ display:none
+}
+.wufoo input,.wufoo textarea {
+ padding:10px;
+ border:1px solid #ecedee;
+ background:#fff;
+ color:#4c4c4c;
+ width:calc(100% - 22px)
+}
+.wufoo input:focus,.wufoo textarea:focus {
+ border:1px solid #ccc
+}
+.wufoo #fo1li3 {
+ width:calc(100% - 22px)!important
+}
+form li.buttons input {
+ display: inline-block;
+	color: #86a0ac;
+  font-size: 1rem;
+  width: auto;
+	margin: 0 auto;
+  background: none;
+	padding: 10px 25px;
+	border: 1px solid #86a0ac;
+	border-radius: 100px;
+	text-decoration: none;
+	transition-duration: 0.5s;
+}
+form li.buttons input:hover {
+ background: #86a0ac;
+	color: #ecedee;
+	transition-duration: 0.5s;
+}
+.embed .confirm h2.freeHeading {
+ margin:0!important;
+ font-family:avenir,helvetica,arial,sans-serif;
+ text-transform:none;
+ font-size:1.5rem
+}
+.embed .confirm .create-message,.embed .confirm a.start-cta,.embed .confirm .logo-container {
+ display:none
+}
+#container,html.embed {
+ background:0 0
+}
+.wufoo li.focused {
+ background:0 0
+}
+#errorLi,.error-container {
+ display:none
+}
+form li.error {
+ background:0 0!important
+}
+form p.error {
+ margin:0 0 10px!important
+}
+@media only screen and (min-width:768px) {
+ .noI form li {
+  width:48%!important;
+  padding:0;
+  margin:0 0 25px
+ }
+}
+@media only screen and (min-width:1200px) {
+ .contact {
+  min-height:350px
+ }
+}
